@@ -42,7 +42,6 @@ function jauge() {
       var deg = Math.round((90*percent)/25);
     }
     
-    
     //Function prefix
     function arcPrefix(element, degValue) {
       element.style.webkitTransform = "rotate("+degValue+"deg)";
@@ -60,8 +59,6 @@ function jauge() {
       spanArc1.style.borderColor = '#26aadd';
       
     }else if(percent<=50) {
-    
-      deg = 90 + deg;
       
       arcPrefix(arc1, 90);
       arcPrefix(arc2, deg);
@@ -70,8 +67,6 @@ function jauge() {
       spanArc2.style.borderColor = '#26aadd';
 
     }else if(percent<=75) {
-      
-      deg = 180 + deg;
       
       arcPrefix(arc1, 90);
       arcPrefix(arc2, 180);
@@ -83,9 +78,7 @@ function jauge() {
       
     }else if(percent<=100) {
       
-      deg = 240 + deg;
-      
-      arcPrefix(arc2, 90);
+      arcPrefix(arc1, 90);
       arcPrefix(arc2, 180);
       arcPrefix(arc3, 270);
       arcPrefix(arc4, deg);
