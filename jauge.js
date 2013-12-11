@@ -39,7 +39,7 @@ function jauge() {
     if(percent == 0) {
       var deg = 0;
     }else {
-      var deg = Math.round((90*25)/percent);
+      var deg = Math.round((90*percent)/25);
     }
     
     
