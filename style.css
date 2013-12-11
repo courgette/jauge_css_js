@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+#container {
+  margin: 10em auto;
+  width: 5em;
+  text-align: center;
+}
+.graph {
+  line-height: 70px;
+}
+.graph .projectGraph {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #FFF;
+}
+.graph .projectGraph div {
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+  right: 50%;
+  bottom: 50%;
+  left: -30px;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.graph .projectGraph span {
+  display: block;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  border: solid 30px #dcdcdc;
+}
+.graph .projectGraph .arc1 {
+  z-index: 1;
+}
+.graph .projectGraph .arc2 {
+  z-index: 2;
+}
+.graph .projectGraph .arc3 {
+  z-index: 3;
+}
+.graph .projectGraph .arc4 {
+  z-index: 4;
+}
+.graph .campaign-amount-stat:after {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 130px;
+  background: #dcdcdc;
+  border-radius: 50%;
+  margin: -100px 0 0 -30px;
+}
