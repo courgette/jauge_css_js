@@ -75,7 +75,7 @@ function jauge() {
       
       arcPrefix(arc1, 90);
       arcPrefix(arc2, 180);
-      arcPrefix(arc2, deg);
+      arcPrefix(arc3, deg);
       
       spanArc1.style.borderColor = '#26aadd';
       spanArc2.style.borderColor = '#26aadd';
